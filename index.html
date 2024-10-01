@@ -57,7 +57,10 @@
 }
 .dm-engagery__dialog__content .button-phone {
   color: #1d3c52;
-  padding: 15px 18px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 13px 18px;
   border: 1px solid #1d3c52;
   background: transparent;
   border-radius: 24px;
@@ -67,25 +70,23 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-weight: 600;
-  font-size: 18px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .dm-engagery__dialog__content .button-phone img {
-  max-height: 24px;
+  max-height: 21px;
 }
 @media (max-width: 768px) {
   .dm-engagery__dialog__content .button-phone {
     position: relative;
     margin-top: 94px;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
     top: 0;
     left: 0;
     font-size: 16px;
-    padding: 16px 12px;
   }
   .dm-engagery__dialog__content .button-phone img {
     max-height: 20px;
@@ -124,7 +125,7 @@
   box-sizing: border-box;
   position: absolute;
   max-width: 502px;
-  min-height: 441px;
+  min-height: 451px;
   top: 50%;
   left: 100px;
   display: flex;
@@ -151,19 +152,24 @@
   margin-top: 10px;
   max-width: 380px;
 }
-.dm-engagery__dialog__content__cover-wrapper__dialog-box .button-register {
+.dm-engagery__dialog__content__cover-wrapper__dialog-box .dm-engagery_register {
+  margin-top: 24px;
+  display: block;
+  width: max-content;
+}
+.dm-engagery__dialog__content__cover-wrapper__dialog-box .dm-engagery_register .button-register {
+  cursor: pointer;
   background: #1d3c52;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 18px;
+  padding: 15px 18px;
   text-align: left;
   border-radius: 24px;
   border: none;
-  margin-top: 24px;
   letter-spacing: 0.5px;
-  padding: 15px 18px;
 }
 @media (max-width: 1024px) {
   .dm-engagery__dialog__content__cover-wrapper .cover-image {
@@ -190,11 +196,11 @@
     transform: translateY(clamp(-90%, 55vw, -91%));
     left: 0;
     max-width: clamp(290px, 60vw, 450px);
-    max-height: clamp(260px, 55vw, 421px);
+    max-height: clamp(300px, 60vw, 421px);
     height: 100%;
     min-height: auto;
     overflow: hidden;
-    padding: 30px 30px 30px 12px;
+    padding: 30px 20px 30px 12px;
     z-index: 100007;
   }
   .dm-engagery__dialog__content__cover-wrapper__dialog-box .header-primary {
@@ -205,7 +211,7 @@
     font-size: clamp(14px, 60vw, 17px);
     line-height: clamp(21px, 60vw, 25px);
   }
-  .dm-engagery__dialog__content__cover-wrapper__dialog-box .button-register {
+  .dm-engagery__dialog__content__cover-wrapper__dialog-box .dm-engagery_register .button-register {
     font-size: 14px;
   }
 }
@@ -233,8 +239,8 @@
     top: 100%;
     transform: translateY(-80%);
     left: 0;
-    max-width: clamp(290px, 55vw, 552px);
-    max-height: clamp(260px, 52vw, 441px);
+    max-width: clamp(290px, 60vw, 552px);
+    max-height: clamp(280px, 60vw, 441px);
     height: 100%;
     min-height: auto;
     overflow: hidden;
@@ -249,7 +255,7 @@
     font-size: clamp(14px, 3vw, 17px);
     line-height: clamp(21px, 3vw, 25px);
   }
-  .dm-engagery__dialog__content__cover-wrapper__dialog-box .button-register {
+  .dm-engagery__dialog__content__cover-wrapper__dialog-box .dm-engagery_register .button-register {
     font-size: 14px;
   }
 }
@@ -278,7 +284,7 @@
     transform: translateY(-80%);
     left: 0;
     max-width: 290px;
-    min-height: 260px;
+    min-height: 280px;
     overflow: hidden;
     padding: 30px 20px 30px 12px;
     z-index: 100007;
@@ -291,7 +297,7 @@
     font-size: 14px;
     line-height: 21px;
   }
-  .dm-engagery__dialog__content__cover-wrapper__dialog-box .button-register {
+  .dm-engagery__dialog__content__cover-wrapper__dialog-box .dm-engagery_register .button-register {
     font-size: 14px;
   }
 }
@@ -384,7 +390,7 @@
                     <div class="header-secondary">
                         Mit mehr als 12.000 Jobs jährlich haben Sie immer die beste Wahl.
                     </div>
-                    <a href="https://www.doctari.de/registrieren?utm_source=engagery" target="_blank">
+                    <a class="dm-engagery_register" href="https://www.doctari.de/registrieren?utm_source=engagery" target="_blank">
                         <button class="button-register">Jetzt registrieren</button>
                     </a>
                 </div>
